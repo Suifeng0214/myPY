@@ -1,9 +1,15 @@
-import math
+num = int(input("Please input an integer:\n"))
+tempNum = num
+reNum = 1
+start = 2
 
-for num in range (2,100):
-    for i in range (2, sqrt(num)):
-        if (num % i == 0) : 
-                break
-    else:
-        print(num, "")
-    
+print(num,"= ", end = "")
+while reNum < num :
+	while tempNum % start == 0 :
+		if reNum == 1:
+			print(start,end = "")
+		else:
+			print(" x", start,end = "")
+		tempNum //= start
+		reNum *= start
+	start += 1
