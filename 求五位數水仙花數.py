@@ -1,11 +1,10 @@
-for i in range(10000, 100000):
-        num = int(input("Check the number: "))
-        temp = num
-        Sum = 0
-        while(temp * 10 // 10 != 0):
-            Sum += (temp % 10) ** len(str(num))
-            temp //= 10  
-        if Sum == num:
-            print(1)
-        else:
-        	print(0)
+num = 10000
+while (num < 100000):
+    temp = num
+    Sum = 0
+    while(temp * 10 // 10 != 0):
+        Sum += (temp % 10) ** len(str(num))
+        temp //= 10  
+    if Sum == num:
+        print(num)
+    num += 1
