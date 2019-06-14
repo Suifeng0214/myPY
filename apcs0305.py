@@ -11,8 +11,10 @@ for line in sys.stdin:
 
         for i in range (0,students):
             print(stuScores[i], end = '')
-            if (i != students-1) :
-                print(" ")
+            if (i != students-1):
+                print(" ",end='')
+			else:
+				print()
         if (int(stuScores[students-1]) < 60):
             print ("worst case")
         elif (int(stuScores[0]) >= 60) :
