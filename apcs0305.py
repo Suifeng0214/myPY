@@ -1,6 +1,6 @@
 import sys 
 for line in sys.stdin: 
-    a=int(line) 
+    a = int(line) 
     if a != 0: 
         stuScores = []
         students = int(input())
@@ -10,9 +10,9 @@ for line in sys.stdin:
         stuScores = sorted(stuScores)
 
         for i in range (0,students):
-            print(stuScores[i], end = ' ')
-            if (i == students-1) :
-                print()
+            print(stuScores[i], end = '')
+            if (i != students-1) :
+                print(" ")
         if (int(stuScores[students-1]) < 60):
             print ("worst case")
         elif (int(stuScores[0]) >= 60) :
